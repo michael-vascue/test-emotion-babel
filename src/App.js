@@ -1,13 +1,12 @@
 import React from 'react';
 import { ThemeProvider } from "emotion-theming"
 
-const theme = {
+export const theme = {
   color: {
     primary: 'orange',
     secondary: 'royalblue',
-    // other brand colours
   },
-  // other properties such font, spacing etc.
+  'lightgreen': 'green'
 };
 
 const App = ({ title }) => (

@@ -1,16 +1,17 @@
 import React from "react";
+import { withTheme } from "emotion-theming";
 
 const Button = () => {
   return (
     <button
       css={(theme)=> ({
-        backgroundColor: 'hotpink',
+        color: "royalblue",
         '&:hover': {
-          color: theme.secondary,
+          color: theme['lightgreen']
         },
       })}
     ></button>
   );
 };
 
-export default Button;
+export default withTheme(Button);
