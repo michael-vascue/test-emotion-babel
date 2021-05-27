@@ -1,5 +1,4 @@
 import React from "react";
-import { withTheme } from "emotion-theming";
 
 const Button = () => {
   return (
@@ -14,4 +13,4 @@ const Button = () => {
   );
 };
 
-export default withTheme(Button);
+export default Button;
