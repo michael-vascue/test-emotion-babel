@@ -3,12 +3,12 @@ import React from "react";
 const Button = () => {
   return (
     <button
-      css={{
-        backgroundColor: "hotpink",
-        "&:hover": {
-          color: "lightgreen"
-        }
-      }}
+      css={(theme)=> ({
+        backgroundColor: 'hotpink',
+        '&:hover': {
+          color: theme.secondary,
+        },
+      })}
     ></button>
   );
 };
